@@ -1,6 +1,6 @@
 ---
 name: "procedural-3d-explainer"
-description: "Build a procedural Three.js (no GLB) interactive 3D explainer with chapter navigation, annotations and a timed mode for video. Use for robot, machine, factory or process stories."
+description: "Build a procedural Three.js (no GLB) 3D explainer from the explainer-kit repo: interactive page with chapters and annotations, plus MP4 video render. Use for robot, machine, factory or process stories."
 ---
 
 # Procedural 3D explainer (Three.js, one source for web + video)
@@ -72,7 +72,7 @@ Buildings: slab, 4 m walls, window bands, doors, roof with parapet, skylights, H
 - Low elevation (el ~0.2) to look inside tunnels/ovens; high elevation hides interiors behind roofs.
 
 ## Publishing as an Artifact (claude.ai)
-- Publish `dist/<name>.fragment.html` (title + style + body) as a private artifact; the update keeps the same URL when the same file path or `url` is passed.
+- Publish `dist/<name>/fragment.html` (title + style + body) as a private artifact; the update keeps the same URL when the same file path or `url` is passed.
 - SIZE: the publish validator refuses pages of about 640 KiB or more. build.mjs prints the size (workshop demo ~540 KiB). three.js dominates: keep minify, no RoomEnvironment/PMREM (Hemisphere light instead), no unused addons.
 - Browser storage may be unavailable: it is wrapped in try/catch (runtime/main.js `store`).
 
