@@ -1,0 +1,46 @@
+{
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#0f1b2d",
+    "muted": "#5b6b80",
+    "accent": "#1f6feb",
+    "accent2": "#7fb2ff",
+    "lineSoft": "#d5deea",
+    "part": "#f3f6fa",
+    "partDark": "#c3d1e3",
+    "edge": "#7f97b8",
+    "ghost": "#f6f8fb",
+    "ground": "#dfe7f2",
+    "lawn": "#edf2f8",
+    "apron": "#f8fafc",
+    "road": "#d6dfeb",
+    "glass": "#9cc3f0",
+    "belt": "#3d4b60",
+    "heater": "#9a3f17",
+    "heat": "#ff7a1a",
+    "fired": "#22324a",
+    "tree": "#c9dcf2"
+  },
+  "font": {
+    "family": "Inter, system-ui, -apple-system, Segoe UI, sans-serif",
+    "caption": 18,
+    "captionShort": 16,
+    "note": 13,
+    "noteSub": 11,
+    "chip": 12
+  },
+  "text": { "default": "full" },
+  "scene": {
+    "edgeOpacity": 0.55,
+    "ghostMix": 0.7,
+    "shadowOpacity": 0.08,
+    "viewLift": 0.04,
+    "fov": 35,
+    "near": 0.5,
+    "far": 900,
+    "minDistance": 3,
+    "maxDistance": 260,
+    "maxFit": 1.8,
+    "refAspect": 1.6
+  }
+}

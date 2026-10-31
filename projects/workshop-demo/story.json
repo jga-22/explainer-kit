@@ -1,0 +1,93 @@
+{
+  "title": "How a small workshop works",
+  "duration": 5,
+  "transition": 2,
+  "chapters": [
+    {
+      "title": "Site",
+      "beats": [
+        {
+          "camera": { "az": 0.55, "el": 0.62, "dist": 72, "target": [0, 1, 0] },
+          "text": "A small workshop turns raw blocks into finished parts.",
+          "short": "From raw block to finished part.",
+          "notes": [
+            { "part": "roof", "at": [0, 0.9, 0], "tag": "Workshop", "off": [50, -60] },
+            { "part": "truck", "at": [-0.8, 3.5, 0], "tag": "Delivery", "off": [-40, -40] }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inside",
+      "beats": [
+        {
+          "camera": { "az": 0.35, "el": 0.72, "dist": 34, "target": [0, 0.5, 0] },
+          "open": { "building": 1 },
+          "flow": { "items": 1 },
+          "act": { "press": 1 },
+          "text": "Lift the roof: every part travels on one belt, left to right.",
+          "short": "One belt, left to right.",
+          "notes": [
+            { "part": "belt", "at": [-9, 0.8, 0.7], "tag": "Belt", "sub": "about 2 m/s", "off": [-30, 60] }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Press",
+      "beats": [
+        {
+          "camera": { "az": 0.9, "el": 0.32, "dist": 17, "target": { "part": "press", "off": [0, 1.2, 0] } },
+          "flow": { "items": 1 },
+          "act": { "press": 1 },
+          "highlight": { "press": 1 },
+          "text": "The press comes down once per block and flattens it.",
+          "short": "Press: flattens each block.",
+          "notes": [
+            { "part": "pressHead", "at": [0.5, 0.25, 0.5], "tag": "Press head", "sub": "one hit per block", "off": [50, -40] }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oven",
+      "beats": [
+        {
+          "camera": { "az": 0.3, "el": 0.2, "dist": 13, "target": { "part": "oven", "off": [0, 1, 0] } },
+          "flow": { "items": 1 },
+          "act": { "press": 1 },
+          "heat": { "oven": 1 },
+          "highlight": { "oven": 1 },
+          "text": "Inside the oven the heat fires each part: it turns from white to dark.",
+          "short": "Oven: white turns dark.",
+          "notes": [
+            { "part": "oven", "at": [-1.2, 1.35, -0.95], "tag": "Heaters", "sub": "fire each part", "off": [40, -50] }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Output",
+      "beats": [
+        {
+          "camera": { "az": -0.6, "el": 0.42, "dist": 14, "target": { "part": "rack", "off": [-1.5, 1.2, 0] } },
+          "flow": { "items": 1 },
+          "act": { "press": 1 },
+          "heat": { "oven": 1 },
+          "highlight": { "rack": 1 },
+          "text": "Finished parts wait on the rack for the next truck.",
+          "short": "Rack: ready to ship.",
+          "notes": [
+            { "part": "rack", "at": [0, 2.5, 0], "tag": "Rack", "sub": "finished parts", "off": [-40, -40] }
+          ]
+        },
+        {
+          "camera": { "az": 0.55, "el": 0.62, "dist": 72, "target": [0, 1, 0] },
+          "open": { "building": 0 },
+          "text": "One site, one belt, three steps: press, fire, store.",
+          "short": "Press, fire, store."
+        }
+      ]
+    }
+  ]
+}
